@@ -8,7 +8,25 @@
     <title>app-notas</title>
   </head>
   <body>
+    <main class="contenedorApp">
+    <h1 class="tituloApp">App de Notas</h1>
 
+    <section class="tarjetaEntrada">
+        <div class="contenedorInput">
+            <label for="tituloNota" class="etiqueta">Título:</label>
+            <input type="text" id="tituloNota" class="entradaTexto" placeholder="Ej: Comprar pan">
+        </div>
+        
+        <div class="contenedorInput">
+            <label for="contenidoNota" class="etiqueta">Contenido:</label>
+            <input type="text" id="contenidoNota" class="entradaTexto" placeholder="Ej: Recordar comprar pan lactal">
+        </div>
+
+        <button id="botonAgregar" class="botonAgregar">Agregar Nota</button>
+    </section>
+
+    <ul id="listaNotas" class="listaNotas"></ul>
+</main>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
